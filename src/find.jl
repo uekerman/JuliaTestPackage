@@ -1,6 +1,6 @@
 
 function find_max(x::AbstractVector)
-    @assert all(!isnan, x)
+    @assert all(!isnan,x)
     currentmax = x[1]
     for a in eachindex(x)
         if x[a] > currentmax
